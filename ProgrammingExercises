@@ -1,0 +1,125 @@
+# 1. Personal Information
+
+name = input("Name: ")
+address = input("Address: ")
+city = input("City: ")
+state = input("State: ")
+zipcode = input("ZIP Code: ")
+telenumber = input("Telephone Number: ")
+collegemajor = input("College Major: ")
+print("","")
+print(name, address, sep='\n', end='\n')
+print(city + ",", state, zipcode, end='\n')
+print(telenumber, end+'\n')
+print(collegemajor)
+
+
+# 2. Sales Prediction
+
+sales = float(input("Total Sales: ")
+print("Annual Profit: ", sales * 0.23)
+
+
+# 3. Land Calculation
+squarefeet = float(input("Total square feet of land?"))
+print("Number of Acres: ", squarefeet / 43560)
+
+
+# 4.
+
+item1 = float(input("Item 1 Price: "))
+item2 = float(input("Item 2 Price: "))
+item3 = float(input("Item 3 Price: "))
+item4 = float(input("Item 4 Price: "))
+item5 = float(input("Item 5 Price: "))
+subtotal = item1 + item2 + item3 + item4 + item5
+salestax = subtotal * 0.07
+total = subtotal + salestax
+print(f'\n \n Subtotal: {subtotal:.2f} \n Sales Tax: {salestax:.2f} \n Total: {total:.2f}')
+
+
+# 5. Distance Traveled
+
+time1 = 6
+time2 = 10
+time3 = 15
+print(f'{time1} hours = {int(time1) * 70} miles')
+print(f'{time2} hours = {int(time2) * 70} miles')
+print(f'{time3} hours = {int(time3) * 70} miles')
+
+
+# 6. Sales Tax
+
+PurchaseAmount = float(input("Amount of Purchase? "))
+statetax = PurchaseAmount * 0.05
+countytax = PurchaseAmount * 0.025
+print("")
+print(f'Subtotal: {PurchaseAmount} \n State Sales Tax: {statetax} \n County Sales Tax: {countytax} \n \n Total: {PurchaseAmount + statetax + countytax:.2f}')
+
+
+# 7. Miles-per-Gallon
+
+miles = float(input("Miles driven? "))
+gallons = float(input("Gallons used? "))
+print(f'MPG = {miles / gallons}')
+
+
+# 8. Tip, Tax, Total
+
+meal = float(input("Price of Meal? "))
+tip = meal * 0.18
+salestax = meal * 0.07
+print(f'\n Subtotal: {meal} \n Tip: {tip} \n Sales Tax: {salestax} \n \n Total: {meal + tip + salestax:.2f}')
+
+# 9. Celsius to Fahrenheit Temperature Converter
+
+temperature = float(input("Temperature (in Celsius)? "))
+print(f'Temperature (in Fahrenheit) = {9/5 * (temperature) + 32:.2f}')
+
+
+# 10. Ingredient Adjuster
+
+sugar = float(input("Sugar (in cups)? "))
+butter = float(input("Butter (in cups)? "))
+flour = float(input("Flour (in cups?) "))
+print(f'\n {sugar * 48} cups of sugar, {butter * 48} cups of butter, {flour * 48} cups of flour')
+
+
+# 11. Lion and Tiger Percentages
+
+lions = float(input("Number of Lions? "))
+tigers = float(input("Number of Tigers? "))
+total = float(lions + tigers)
+print(f'The Big Cat exhibit is {lions / total:.2f}% lions and {tigers / total:.2f}% tigers.')
+
+
+# 12. Stock Transition Program
+
+purchased = 2000 * 40
+commission1 = purchased * 0.03
+sold = 2000 * 42.75
+commission2 = sold * 0.03
+print(f'Money paid for stock: ${purchased:.2f}')
+print(f'\n Money given to broker when stock was bought: ${commission1:.2f}')
+print(f'\n Stock sold for: ${sold:.2f}')
+print(f'\n Money given to broker when stock was sold: ${commission2:.2f}')
+if sold + commission2 > purchased + commission1:
+    print("Joe made a profit.")
+else:
+    print("Joe lost money.")
+
+
+# 13. Planting Grapevines
+
+row = float(input("Length of the row, in feet? "))
+spacepost = float(input("Space used by an end-post assembly, in feet? "))
+spacevines = float(input("Space between the vines, in feet? "))
+print(f'\n The number of grapevines that will fit in a row will be {(row - 2 * spacepost) / spacevines}.')
+
+# 14. Compound Interest
+
+deposit = float(input("Amount Deposited? "))
+annualinterest = float(input("Annual interest rate, as a decimal? "))
+timescompounded = float(input("Times compounded per year? "))
+years = input("Number of years? ")
+print(f'There will be ${deposit * (1 + (annualinterest / timescompounded)) ** (timescompounded * float(years)):.2f} after {years} years.')
